@@ -8,7 +8,7 @@ export default {
   ],
   output: [
     { format: 'es', file: pkg.module },
-    { format: 'es', file: pkg.exports['.'].import },
+    { format: 'es', file: pkg.exports['.'].import.default },
     { format: 'cjs', file: pkg.main },
     { format: 'umd', file: pkg.browser, name: pkg.name },
   ],
