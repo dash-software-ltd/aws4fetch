@@ -10,11 +10,26 @@
   "browser": "dist/aws4fetch.umd.js",
   "exports": {
     ".": {
-      "import": "./dist/aws4fetch.esm.mjs",
-      "worker": "./dist/aws4fetch.esm.js",
-      "browser": "./dist/aws4fetch.umd.js",
-      "require": "./dist/aws4fetch.cjs.js",
-      "default": "./dist/aws4fetch.umd.js"
+      "import": {
+        "types": "./dist/main.d.ts",
+        "default": "./dist/aws4fetch.esm.mjs"
+      },
+      "worker": {
+        "types": "./dist/main.d.ts",
+        "default": "./dist/aws4fetch.esm.js"
+      },
+      "browser": {
+        "types": "./dist/main.d.ts",
+        "default": "./dist/aws4fetch.umd.js"
+      },
+      "require": {
+        "types": "./dist/main.d.ts",
+        "default": "./dist/aws4fetch.cjs.js"
+      },
+      "default": {
+        "types": "./dist/main.d.ts",
+        "default": "./dist/aws4fetch.umd.js"
+      }
     }
   },
   "types": "dist/main.d.ts",
